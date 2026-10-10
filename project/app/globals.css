@@ -1,0 +1,102 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 35 35% 97%;
+    --foreground: 24 24% 16%;
+    --card: 36 45% 99%;
+    --card-foreground: 24 24% 16%;
+    --popover: 36 45% 99%;
+    --popover-foreground: 24 24% 16%;
+    --primary: 24 42% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 32% 93%;
+    --secondary-foreground: 24 24% 16%;
+    --muted: 35 32% 93%;
+    --muted-foreground: 24 12% 44%;
+    --accent: 24 42% 36%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 22% 84%;
+    --input: 30 22% 82%;
+    --ring: 24 42% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+    background: linear-gradient(120deg, #fffdfa 0%, #f5eee7 38%, #fffaf5 70%, #f0e6dc 100%);
+    background-attachment: fixed;
+    background-size: 220% 220%;
+    animation: ambientGradient 24s ease-in-out infinite alternate;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient-cocoa {
+    @apply bg-gradient-to-r from-cocoa-700 via-cocoa-600 to-cocoa-500 bg-clip-text text-transparent;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(92, 58, 39, 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(92, 58, 39, 0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .glow-cocoa {
+    box-shadow: 0 0 40px -10px rgba(122, 75, 48, 0.28);
+  }
+}
+
+@keyframes ambientGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes driftSlow {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(18px, -14px, 0) scale(1.06); }
+}
+
+@keyframes driftReverse {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-16px, 12px, 0) scale(0.95); }
+}
+
+.animate-drift-slow {
+  animation: driftSlow 12s ease-in-out infinite;
+}
+
+.animate-drift-reverse {
+  animation: driftReverse 15s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5eee7;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8957d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #87533b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
