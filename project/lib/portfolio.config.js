@@ -167,7 +167,7 @@ export const education = [
     degree: "Master of Computer Applications (MCA)",
     institution: "Kalyani Government Engineering College / MAKAUT",
     cgpa: "8.26",
-    period: "2023 — 2025",
+    period: "2024 — 2026",
   },
   {
     degree: "Bachelor of Science in Physics",

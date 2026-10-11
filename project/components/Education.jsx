@@ -31,7 +31,7 @@ export default function Education() {
                 {/* Timeline dot */}
                 <div className="absolute left-2.5 top-6 h-3 w-3 rounded-full border-2 border-cocoa-700 bg-background" />
 
-                <div className="rounded-xl border border-border bg-card/40 p-6 transition-all hover:border-cocoa-700/30">
+                <div className="rounded-xl border border-[#A87950] bg-card/40 p-6 transition-all ">
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div className="flex items-center gap-3">
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-cocoa-700/10">
@@ -47,10 +47,10 @@ export default function Education() {
                       </div>
                     </div>
                     <div className="flex flex-col items-end gap-1">
-                      <span className="rounded-md border border-border bg-secondary/50 px-3 py-1 font-mono text-xs text-cocoa-700">
+                      <span className="rounded-md border border-border bg-secondary/50 px-3 py-1 font-mono text-xs text-[#3E2723]">
                         CGPA: {item.cgpa}
                       </span>
-                      <span className="font-mono text-xs text-muted-foreground/60">
+                      <span className="font-mono text-xs text-[#65432F]">
                         {item.period}
                       </span>
                     </div>

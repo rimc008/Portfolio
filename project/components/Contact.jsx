@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Code2, BriefcaseBusiness, Mail, Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { Mail, Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import SectionHeading from "./SectionHeading";
 import { contact, personal } from "@/lib/portfolio.config";
 
@@ -122,7 +123,7 @@ export default function Contact() {
                 href={personal.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                icon={<Code2 className="h-5 w-5 text-cocoa-700" />}
+                icon={<FaGithub className="h-5 w-5 text-cocoa-700" />}
                 label="GitHub"
                 value="rimc008"
               />
@@ -130,7 +131,7 @@ export default function Contact() {
                 href={personal.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                icon={<BriefcaseBusiness className="h-5 w-5 text-cocoa-700" />}
+                icon={<FaLinkedin className="h-5 w-5 text-cocoa-700" />}
                 label="LinkedIn"
                 value="Connect with me"
               />

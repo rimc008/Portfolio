@@ -31,7 +31,7 @@ export default function Engineering() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="group relative overflow-hidden rounded-xl border border-border bg-card/40 p-6 transition-all hover:border-cocoa-700/30"
+                className="group relative overflow-hidden rounded-xl border border-[#65432F] bg-card/40 p-6 transition-all hover:-translate-y-1"
               >
                 <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-cocoa-700/5 blur-2xl transition-all group-hover:bg-cocoa-600/10" />
 

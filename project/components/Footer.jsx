@@ -1,6 +1,7 @@
 "use client";
 
-import { Code2, BriefcaseBusiness, Mail } from "lucide-react";
+import {Code2,Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { personal, navLinks } from "@/lib/portfolio.config";
 
 export default function Footer() {
@@ -40,7 +41,7 @@ export default function Footer() {
               className="text-muted-foreground transition-colors hover:text-cocoa-700"
               aria-label="GitHub"
             >
-              <Code2 className="h-5 w-5" />
+              <FaGithub className="h-5 w-5" />
             </a>
             <a
               href={personal.social.linkedin}
@@ -49,7 +50,7 @@ export default function Footer() {
               className="text-muted-foreground transition-colors hover:text-cocoa-700"
               aria-label="LinkedIn"
             >
-              <BriefcaseBusiness className="h-5 w-5" />
+              <FaLinkedin className="h-5 w-5" />
             </a>
             <a
               href={`mailto:${personal.email}`}
