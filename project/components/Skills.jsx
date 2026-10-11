@@ -42,7 +42,7 @@ export default function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="group rounded-xl border border-border bg-card/40 p-6 transition-all hover:border-cocoa-700/30 hover:bg-card/60"
+                className="group rounded-xl border border-[#3E2723] bg-card/40 p-6 transition-all hover:border-cocoa-700/30 hover:bg-card/60"
               >
                 <div className="mb-5 flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-cocoa-700/10 transition-colors group-hover:bg-cocoa-600/20">
@@ -56,7 +56,7 @@ export default function Skills() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-md border border-border bg-secondary/50 px-3 py-1.5 font-mono text-xs text-muted-foreground transition-colors hover:border-cocoa-700/30 hover:text-cocoa-700"
+                      className="rounded-md border border-[#3E2723] bg-[#3E2723] px-3 py-1.5 font-mono text-xs text-white transition-colors hover:bg-white hover:text-[#3E2723] hover:font-bold"
                     >
                       {item}
                     </span>

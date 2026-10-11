@@ -4,7 +4,7 @@
 // ════════════════════════════════════════════════════════════════
 
 export const personal = {
-  name: "Roman Chakraborty",
+  name: "ROMAN CHAKRABORTY",
   tagline: "FULL-STACK DEVELOPER | AI ENGINEER",
   heroHeading: "Building Intelligent Products for the Web.",
   heroSubtext:
@@ -184,11 +184,11 @@ export const contact = {
 };
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Engineering", href: "#engineering" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
+  { label: "HOME", href: "#home" },
+  { label: "ABOUT", href: "#about" },
+  { label: "SKILLS", href: "#skills" },
+  { label: "PROJECTS", href: "#projects" },
+  { label: "ENGINEERING", href: "#engineering" },
+  { label: "EDUCATION", href: "#education" },
+  { label: "CONTACT", href: "#contact" },
 ];

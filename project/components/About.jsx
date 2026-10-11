@@ -8,7 +8,7 @@ import { about } from "@/lib/portfolio.config";
 export default function About() {
   return (
     <section id="about" className="relative px-6 py-24">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl text-[#3E2723]">
         <SectionHeading eyebrow="01 — ABOUT" title="A bit about me" />
 
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr]">
@@ -58,8 +58,8 @@ export default function About() {
 
 function InfoCard({ icon, title, value }) {
   return (
-    <div className="flex items-center gap-4 rounded-lg border border-border bg-card/50 p-4 transition-colors hover:border-cocoa-700/30">
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-cocoa-700/10">
+    <div className="flex items-center gap-4 rounded-lg border border-[#3E2723] bg-card/50 p-4 transition-colors hover:border-cocoa-700/30">
+      <div className="flex h-10 w-10 shrink-0 items-center border border-[#3E2723] justify-center rounded-lg bg-cocoa-700/10">
         {icon}
       </div>
       <div>
