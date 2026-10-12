@@ -23,7 +23,7 @@ const iconMap = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative px-6 py-24">
+    <section id="skills" className="relative px-6 py-10">
       <div className="absolute left-0 top-1/2 h-64 w-64 rounded-full bg-cocoa-700/5 blur-[100px]" />
       <div className="mx-auto max-w-6xl">
         <SectionHeading

@@ -1,6 +1,6 @@
 "use client";
 
-import {Code2,Mail } from "lucide-react";
+import { Code2 , Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { personal, navLinks } from "@/lib/portfolio.config";
 

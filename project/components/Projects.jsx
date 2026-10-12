@@ -8,7 +8,7 @@ import { projects, personal } from "@/lib/portfolio.config";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative px-6 py-24">
+    <section id="projects" className="relative px-6 py-10">
       <div className="absolute right-1/4 top-0 h-72 w-72 rounded-full bg-cocoa-700/5 blur-[120px]" />
       <div className="mx-auto max-w-6xl">
         <SectionHeading

@@ -7,7 +7,7 @@ import { education } from "@/lib/portfolio.config";
 
 export default function Education() {
   return (
-    <section id="education" className="relative px-6 py-24">
+    <section id="education" className="relative px-6 py-10">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="05 — EDUCATION"

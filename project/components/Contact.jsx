@@ -54,42 +54,50 @@ export default function Contact() {
     setStatus("loading");
     setErrors({});
 
-    // ─── FORM INTEGRATION POINT ───
-    // Replace the code below with your actual form service.
-    // Options:
-    //   1. Formspree: Set FORMSPREE_ENDPOINT in .env and use it here
-    //   2. Resend/Email API: Use a server route at /api/contact
-    //   3. Supabase: Insert into a 'contact_messages' table
-    //
-    // Example (Formspree):
-    //   const res = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT, {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(formState),
-    //   });
-    //
-    // For now, we simulate the flow so the UI works correctly,
-    // but honestly report that no backend is connected.
-
+        
     try {
-      // Simulated submission — no backend connected
-      await new Promise((resolve) => setTimeout(resolve, 1200));
-
-      // No real form service connected — report honestly
-      setStatus("error");
-      setStatusMessage(
-        "No form service is connected yet. Please email me directly at " +
-          personal.email +
-          ", or connect a form service (see code comments in Contact.jsx)."
+      const res = await fetch(
+        "https://formsubmit.co/ajax/rikuc08@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: formState.name,
+            email: formState.email,
+            message: formState.message,
+            _subject: "New Portfolio Contact Message",
+          }),
+        }
       );
+
+      const data = await res.json();
+
+
+      if (!res.ok || data.success !== "true") {
+        throw new Error("Email could not be sent");
+      }
+
+      setStatus("success");
+      setStatusMessage("Message sent successfully!");
+      setFormState({ name: "", email: "", message: "" });
     } catch (err) {
       setStatus("error");
-      setStatusMessage("Something went wrong. Please try emailing me directly.");
+      console.log(err.message);
+      
+      setStatusMessage("Failed to send. Please try again.");
+    } finally {
+      setStatus((current) =>
+        current === "loading" ? "idle" : current
+      );
     }
+
   };
 
   return (
-    <section id="contact" className="relative px-6 py-24">
+    <section id="contact" className="relative px-6 py-10">
       <div className="absolute left-1/3 bottom-0 h-72 w-72 rounded-full bg-cocoa-700/8 blur-[120px]" />
       <div className="mx-auto max-w-6xl">
         <SectionHeading
@@ -230,6 +238,13 @@ export default function Contact() {
                 </div>
               )}
             </form>
+            <div>
+              {statusMessage!=="" && (
+                <div>
+                  {statusMessage}
+                </div>
+              )}
+            </div>
           </motion.div>
         </div>
       </div>

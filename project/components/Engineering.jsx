@@ -13,7 +13,7 @@ const iconMap = {
 
 export default function Engineering() {
   return (
-    <section id="engineering" className="relative px-6 py-24">
+    <section id="engineering" className="relative px-6 py-10">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="04 — APPROACH"
