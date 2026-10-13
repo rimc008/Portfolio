@@ -52,7 +52,7 @@ export default function Navbar() {
           className="flex items-center gap-2 text-sm font-bold tracking-tight"
         >
           <Code2 className={`h-5 w-5 animate-pulse ${scrolled? "text-[#3E2723]" :"text-white"}`} />
-          <span className={`${scrolled ? "text-[#3E2723]" :"text-white"}`}>{personal.name}</span>
+          <span className={`text-[17px] font-serif ${scrolled ? "text-[#3E2723]" :"text-white"}`}>{personal.name}</span>
         </a>
 
         {/* Desktop nav */}
@@ -83,7 +83,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="rounded-md p-2 text-muted-foreground hover:text-foreground md:hidden"
+          className={`rounded-md p-2 ${scrolled ? "text-[#3E2723]" :"text-white"} hover:text-foreground md:hidden`}
           aria-label="Toggle navigation menu"
           aria-expanded={mobileOpen}
         >

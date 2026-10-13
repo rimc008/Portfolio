@@ -61,12 +61,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-
-        <div className="mt-8 border-t border-border/50 pt-6 text-center">
-          <p className="font-mono text-xs text-muted-foreground/60">
-            Built with Next.js, Tailwind CSS & Framer Motion
-          </p>
-        </div>
       </div>
     </footer>
   );

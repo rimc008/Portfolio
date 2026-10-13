@@ -7,7 +7,7 @@ import { about } from "@/lib/portfolio.config";
 
 export default function About() {
   return (
-    <section id="about" className="relative px-6 py-10">
+    <section id="about" className="relative px-6 py-20 md:py-10">
       <div className="mx-auto max-w-6xl text-[#3E2723]">
         <SectionHeading eyebrow="01 — ABOUT" title="A bit about me" />
 
