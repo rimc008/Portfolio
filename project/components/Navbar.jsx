@@ -61,7 +61,7 @@ export default function Navbar() {
       }`}
     >
       <nav
-        className={`relative flex w-[100vw] items-center justify-between md:justify-evenly px-5 py-3.5 transition-all duration-500 sm:px-6 ${
+        className={`relative flex w-[100vw] items-center justify-between lg:justify-evenly px-5 py-3.5 transition-all duration-500 sm:px-6 ${
           scrolled
             ? "rounded-2xl border border-[#3E2723]/15 bg-[#F5E8D8]/90 shadow-[0_8px_35px_rgba(62,39,35,0.12)] backdrop-blur-2xl"
             : "border-b border-white/10 bg-[#6F4E37] shadow-md"
@@ -95,7 +95,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop navigation */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => {
             const isActive =
               activeSection === link.href.replace("#", "");
@@ -137,7 +137,7 @@ export default function Navbar() {
         <a
           href="#contact"
           onClick={(e) => handleNavClick(e, "#contact")}
-          className={`hidden items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 md:flex ${
+          className={`hidden items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 lg:flex ${
             scrolled
               ? "bg-[#6F4E37] text-[#F5E8D8] shadow-sm hover:bg-[#65432F]"
               : "bg-[#F5E8D8] text-[#3E2723] hover:bg-white"
@@ -151,7 +151,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileOpen((open) => !open)}
-          className={`grid h-10 w-10 place-items-center rounded-xl transition-all duration-300 md:hidden ${
+          className={`grid h-10 w-10 place-items-center rounded-xl transition-all duration-300 lg:hidden ${
             scrolled
               ? "bg-[#3E2723]/5 text-[#3E2723] hover:bg-[#3E2723]/10"
               : "bg-white/10 text-white hover:bg-white/20"
@@ -173,7 +173,7 @@ export default function Navbar() {
       {/* Mobile navigation */}
       <div
         id="mobile-navigation"
-        className={`absolute inset-x-3 top-full mt-2 overflow-hidden rounded-2xl border border-[#3E2723]/15 bg-[#F5E8D8]/[0.97] shadow-[0_20px_60px_rgba(62,39,35,0.2)] backdrop-blur-2xl transition-all duration-300 md:hidden ${
+        className={`absolute inset-x-3 top-full mt-2 overflow-hidden rounded-2xl border border-[#3E2723]/15 bg-[#F5E8D8]/[0.97] shadow-[0_20px_60px_rgba(62,39,35,0.2)] backdrop-blur-2xl transition-all duration-300 lg:hidden ${
           mobileOpen
             ? "visible translate-y-0 opacity-100"
             : "invisible -translate-y-2 opacity-0"
