@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center px-6 pt-20 md:pt-30"
+      className="relative flex items-center justify-center px-6 pt-20 md:pt-30"
     >
       {/* Background grid */}
       <div className="absolute inset-0 bg-grid opacity-40" />
@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="absolute left-1/4 top-1/4 h-96 w-96 animate-drift-slow rounded-full bg-cocoa-700/10 blur-[120px]" />
       <div className="absolute bottom-1/4 right-1/4 h-72 w-72 animate-drift-reverse rounded-full bg-cocoa-500/5 blur-[100px]" />
 
-      <div className="relative z-10 flex flex-wrap justify-center gap-15 lg:gap-10">
+      <div className="relative z-10 flex flex-wrap gap-15 lg:gap-10 justify-center">
         {/* Left: text content */}
         <div className="w-[90vw] md:w-[35vw]">
           <motion.div
