@@ -151,10 +151,10 @@ function ProjectCard({ project, index }) {
         <source
           src={
             project.name === "YojanaAI"
-              ? "/videos/YouCut_20261007_020322702.mp4"
+              ? "https://utl6ywvoo9nkzg7l.public.blob.vercel-storage.com/YouCut_20261007_020322702.mp4"
               : project.name === "RAGeniusAI"
-                ? "/videos/YouCut_20260707_123635220.mp4"
-                : "/videos/YouCut_20260607_210127403.mp4"
+                ? "https://utl6ywvoo9nkzg7l.public.blob.vercel-storage.com/YouCut_20260707_123635220.mp4"
+                : "https://utl6ywvoo9nkzg7l.public.blob.vercel-storage.com/YouCut_20260607_210127403.mp4"
           }
           type="video/mp4"
         />
