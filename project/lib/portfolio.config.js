@@ -1,7 +1,4 @@
-// ════════════════════════════════════════════════════════════════
-//  PORTFOLIO CONFIGURATION — Edit all your personal details here
-//  This is the single source of truth for your portfolio content.
-// ════════════════════════════════════════════════════════════════
+
 
 export const personal = {
   name: "ROMAN CHAKRABORTY",
