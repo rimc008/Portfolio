@@ -19,7 +19,11 @@ export default function Projects() {
 
         <div className="space-y-20">
           {projects.map((project, i) => (
-            <ProjectCard key={project.name} project={project} index={i} />
+
+            <div>
+              <div className="p-3 w-fit text-lg text-[#3E2723] font-bold border border-[#3E2723] border-3 rounded-lg bg-[#A67C52] text-white m-2 ">Project {i+1}</div>
+              <ProjectCard key={project.name} project={project} index={i} />
+            </div>
           ))}
         </div>
       </div>

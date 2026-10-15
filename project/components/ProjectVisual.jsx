@@ -122,11 +122,6 @@ function RAGeniusVisual() {
               ))}
             </div>
           </div>
-          <div className="flex justify-center w-[100%] m-3">
-            <div className="h-60 w-[90%] md:w-[80%] border border-black">
-
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -157,7 +152,7 @@ function EcommerceVisual() {
 
         {/* Product grid */}
         <div className="grid grid-cols-3 gap-2">
-          {[1, 2, 3].map((i) => (
+          {[1, 2, 3, 4, 5, 6].map((i) => (
             <div
               key={i}
               className="rounded-lg border border-border/60 bg-secondary/30 p-2.5"
@@ -173,12 +168,6 @@ function EcommerceVisual() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="flex justify-center w-[100%]">
-          <div className="h-60 w-[90%] md:w-[80%] border border-black">
-
-          </div>
         </div>
 
         {/* Payment flow indicator */}
