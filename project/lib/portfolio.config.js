@@ -75,10 +75,10 @@ export const projects = [
       "LangGraph",
     ],
     features: [
-      "Semantic retrieval over government scheme information",
-      "Vector embeddings with Qdrant-based retrieval",
-      "Personalized scheme discovery",
-      "Retrieval and response-generation pipeline",
+      "Built YojanaAI, an AI-powered government scheme discovery platform that helps users find relevant Indian government schemes based on their needs, eligibility, and natural-language queries across 4,900+ schemes.",
+      "Engineered an end-to-end RAG system that converts scheme data into 24,850+ vector embeddings in Qdrant and uses semantic retrieval with MMR to identify diverse, contextually relevant schemes instead of relying on keyword matching.",
+      "Built a multimodel AI pipeline integrating 3 LLMs with LangChain and LangGraph, and developed the full-stack platform with Next.js, FastAPI, MongoDB, Qdrant, Docker, and REST APIs for eligibility filtering, scheme details, official application links, and AI-powered recommendations."
+
     ],
     github: "https://github.com/rimc008/YojanaAi",
     liveDemo: null,
@@ -100,10 +100,10 @@ export const projects = [
       "LLM Integration",
     ],
     features: [
-      "Document-based question answering",
-      "Retrieval-Augmented Generation pipeline",
-      "Vector similarity search",
-      "PDF summaries, notes, and quiz generation",
+
+      "Built a Retrieval-Augmented Generation pipeline for conversational PDF search, chunking documents and indexing embeddings in Qdrant, cutting re-reading of 10 to 100+ page documents down to a single query.",
+      "Tested retrieval across 25+ PDFs and refined chunking to improve retrieval on multi-column documents.", 
+      "Generated summaries and notes with Gemini and built quiz and PDF Q&A features with Grok.",
     ],
     github: "https://github.com/rimc008/Rag_project2",
     liveDemo: null,
@@ -127,10 +127,10 @@ export const projects = [
       "Razorpay",
     ],
     features: [
-      "Responsive product and shopping interfaces",
-      "REST API development with authentication",
-      "Shopping cart and state management",
-      "Payment integration and image upload workflows",
+      "Designed the MongoDB schema and REST API for product listings using MVC architecture, with category and price filtering, search, and browsing.",
+      "Built a shopping cart with size selection, secured with JWT authentication, protected routes, and rate-limited login/signup.",
+      "Integrated Razorpay in test mode with failed/pending payment handling, and built an admin dashboard for inventory and order management with low coupling and high cohesion.",
+
     ],
     github: "https://github.com/rimc008/Ecommerce",
     liveDemo: null,
