@@ -7,7 +7,7 @@ export const personal = {
   heroSubtext:
     "I'm a postgraduate computer applications student passionate about full-stack engineering and AI-powered applications. I build scalable web experiences and intelligent systems that solve practical problems.",
   email: "rikuc08@gmail.com",
-  resumePath: "/cv/CV___2.pdf",
+  resumePath: "/cv/CV__6.pdf",
   social: {
     github: "https://github.com/rimc008",
     linkedin: "https://www.linkedin.com/in/romanchakraborty",
@@ -81,7 +81,7 @@ export const projects = [
 
     ],
     github: "https://github.com/rimc008/YojanaAi",
-    liveDemo: null,
+    liveDemo: "https://yojana-ai-eight.vercel.app",
     visual: "yojanaai",
   },
   {
